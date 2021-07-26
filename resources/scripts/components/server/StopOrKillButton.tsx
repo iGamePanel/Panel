@@ -19,7 +19,7 @@ const StopOrKillButton = ({ onPress }: { onPress: (action: PowerAction) => void 
             disabled={!status || status === 'offline'}
             onClick={e => {
                 e.preventDefault();
-                onPress(clicked ? 'Arrêt d\'urgence' : 'Arrêt');
+                onPress(clicked ? 'kill' : 'stop');
                 setClicked(true);
             }}
         >
